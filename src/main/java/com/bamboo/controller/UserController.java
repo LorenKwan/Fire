@@ -3,7 +3,10 @@ package com.bamboo.controller;
 import com.bamboo.helper.ConfigHelper;
 import com.bamboo.model.User;
 import com.bamboo.service.UserService;
+import com.bamboo.util.CacheUtil;
 import com.bamboo.util.CommonUtil;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +25,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Logger;
 
 /**
  * Created by Bob Guan on 2015/12/11.
@@ -62,7 +66,10 @@ public class UserController {
             HttpServletResponse res = response;
             HttpServletRequest req = request;
             //User user1=CommonUtil.deserialize(ss,(new User()).getClass());
-            CommonUtil.setCookie(response, "fire", CommonUtil.serialize(user), 60 * 60 * 60);
+            String fireKey = CommonUtil.Md5_16("fire");
+            CommonUtil.setCookie(response, "fire", fireKey, 60 * 60 * 60);
+            CacheUtil.getInstance().put(fireKey, CommonUtil.serialize(user));
+           // CommonUtil.getLog().error("55");
         }
         return map;
     }
