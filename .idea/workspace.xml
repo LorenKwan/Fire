@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f46169de-666f-4f13-adc8-13e28785a6e8" name="Default" comment="增加 cache的基本处理">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bamboo/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/bamboo/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bamboo/util/CommonUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/bamboo/util/CommonUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/conf/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/conf/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/logs/error.log" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/logs/error.log" />
-    </list>
-    <list id="ed8c4234-76a4-4110-ab54-bae7a323202f" name="Rejected commit: Default" comment="增加 cache的基本处理">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bamboo/util/CacheUtil.java" />
-    </list>
+    <list default="true" id="f46169de-666f-4f13-adc8-13e28785a6e8" name="Default" comment="增加 cache的基本处理" />
+    <list id="ed8c4234-76a4-4110-ab54-bae7a323202f" name="Rejected commit: Default" comment="增加 cache的基本处理" />
     <ignored path="Fire.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1134,7 +1125,7 @@
       <workItem from="1449800052937" duration="23340000" />
       <workItem from="1449827557501" duration="13712000" />
       <workItem from="1449847723910" duration="681000" />
-      <workItem from="1449924247283" duration="7873000" />
+      <workItem from="1449924247283" duration="8449000" />
     </task>
     <servers />
   </component>
@@ -1171,7 +1162,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47184000" />
+    <option name="totallyTimeSpent" value="47760000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1183,7 +1174,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1370" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
