@@ -29,7 +29,7 @@ public class CommonUtil {
     /* 检查字符串是否为空或者null,只要有一个参数符合即返回true*/
     public static boolean isNullOrEmpty(String... params) {
         for (String param : params) {
-            if (param == null && "".equals(param)) {
+            if (param == null || "".equals(param)) {
                 return true;
             }
         }

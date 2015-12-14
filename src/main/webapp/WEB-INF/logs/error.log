@@ -1,7 +1,0 @@
-2015-12-12 22:35:11 [ RMI TCP Connection(3)-127.0.0.1:1327 ] - [ ERROR ] maxIdle is deprecated
-2015-12-12 22:36:31 [ http-apr-8088-exec-8:80734 ] - [ ERROR ] ~~info~~
-2015-12-12 22:43:16 [ RMI TCP Connection(3)-127.0.0.1:1467 ] - [ ERROR ] maxIdle is deprecated
-2015-12-12 22:43:23 [ http-apr-8088-exec-8:8049 ] - [ ERROR ] 55
-2015-12-12 22:59:28 [ RMI TCP Connection(3)-127.0.0.1:1214 ] - [ ERROR ] maxIdle is deprecated
-2015-12-12 22:59:34 [ http-apr-8088-exec-8:7386 ] - [ ERROR ] 55
-2015-12-12 22:59:36 [ http-apr-8088-exec-9:9053 ] - [ ERROR ] 55

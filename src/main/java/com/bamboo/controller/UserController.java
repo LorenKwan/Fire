@@ -5,8 +5,6 @@ import com.bamboo.model.User;
 import com.bamboo.service.UserService;
 import com.bamboo.util.CacheUtil;
 import com.bamboo.util.CommonUtil;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,7 +23,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Logger;
 
 /**
  * Created by Bob Guan on 2015/12/11.
@@ -37,14 +34,14 @@ public class UserController {
     @Resource
     private UserService userService;
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "", method = RequestMethod.GET)
     public String index() {
         return "index";
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     @ResponseBody
-    public Object Login(HttpServletRequest request, HttpServletResponse response, @RequestParam String username, @RequestParam String password) {
+    public Object login(HttpServletRequest request, HttpServletResponse response, @RequestParam String username, @RequestParam String password) {
         Map<String, Object> map = new HashMap<String, Object>();
         out:
         if (!CommonUtil.isNullOrEmpty(username, password)) {
@@ -69,8 +66,20 @@ public class UserController {
             String fireKey = CommonUtil.Md5_16("fire");
             CommonUtil.setCookie(response, "fire", fireKey, 60 * 60 * 60);
             CacheUtil.getInstance().put(fireKey, CommonUtil.serialize(user));
-           // CommonUtil.getLog().error("55");
+            // CommonUtil.getLog().error("55");
         }
+        return map;
+    }
+
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    @ResponseBody
+    public Object test(HttpServletRequest request, HttpServletResponse response) {
+        //throw new AuthorizationException();
+        Map<String, Object> map = new HashMap<String, Object>();
+        //测试异常解析
+        User user;
+        user = null;
+        user.getPassword();
         return map;
     }
     /*
