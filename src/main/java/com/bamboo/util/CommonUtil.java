@@ -191,7 +191,7 @@ public class CommonUtil {
     public static Log getLog() {
         if (null == log) {
             log = LogFactory.getLog(new Object() {
-                //静态方法中获取当前类名 本文来自织梦
+                //静态方法中获取当前类名
                 public String getClassName() {
                     String className = this.getClass().getName();
                     return className.substring(0, className.lastIndexOf('$'));
